@@ -1,4 +1,4 @@
-In this repository I will presnent my PCB designs. 
+In this repository I will present my PCB designs. 
 
 My **main** project is custom **LED controller** based on the Arduino Nano that i have designed and manufactured with JLCPCB. More on that in the **PCB_design/LED_arduino_controller**.
 
