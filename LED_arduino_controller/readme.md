@@ -1,8 +1,8 @@
-# LED Arduino Nano Controller PCB designe 
+# LED Arduino Nano Controller PCB Design
 
-## Project description
+## Project Description
 
-To gain a better understanding of the PCB design process, I wanted to design my own custom LED controller board for the wall-mounted Neon Light of my designe. The goal was to create my own PCB in CiruitMaker and later to manufactured it with JLCPCB. It was a test how fast can I create custom boards, for my future robotics projects. 
+To gain a better understanding of the PCB design process, I wanted to design my own custom LED controller board for the wall-mounted Neon Light of my design. The goal was to create my own PCB in CircuitMaker and later to manufacture it with JLCPCB. It was a test of how fast I could create custom boards for my future robotics projects.
 
 <img src="https://github.com/majkel808/PCB_designe/assets/163661382/750a7a73-9e4b-4460-8934-f5710693bbf8" alt="20231005_1851ddd49" width="700"/>
 
@@ -15,18 +15,17 @@ To gain a better understanding of the PCB design process, I wanted to design my 
 - [PCB Manufacturing](#pcb-manufacturing)
 
 ## Functionality Description
-The aim of the project was to control custom Neon Ligt, that have two different ARGB LED strips. The user should be able to control:
-- The brightness of the LED with potentiometer
-- Range of each component of the RGB color via potentiometer
-- Choose which LED strip is contolled with bistable switch 
+The aim of the project was to control a custom Neon Light, which has two different ARGB LED strips. The user should be able to control:
+- The brightness of the LED with a potentiometer
+- The range of each component of the RGB color via a potentiometer
+- Choose which LED strip is controlled with a bistable switch
 - Powering on the device with a button
 
-Due to diffrence in required volatge and huge power consumtion of the LED stips, 3 steps down converters were used in the project.
-
+Due to differences in required voltage and high power consumption of the LED strips, three step-down converters were used in the project.
 
 ## Electronic Schematic
 
-The schematic was made in CircuitMaker, due to the lack of components in the program's library, it was necessary to create custom electronic parts.
+The schematic was made in CircuitMaker. Due to the lack of components in the program's library, it was necessary to create custom electronic parts.
 
 ### The electronic schematic:
 
@@ -34,18 +33,18 @@ The schematic was made in CircuitMaker, due to the lack of components in the pro
 
 ## Electronics Testing
 
-When the schematic was ready, I've tested the electronic components and whole wiring configuration on the bradboard. With this setup it was possible to write an arduino sketch to controll the LED strip.
+When the schematic was ready, I tested the electronic components and the whole wiring configuration on a breadboard. With this setup, it was possible to write an Arduino sketch to control the LED strip.
 
 ## Arduino IDE Coding
 
-The arduino code I have preapeard for this project was devided in 3 files
-- NEON_arduino_two_strip.ino for defining the libraries, used variables. I have used the FastLED.h library for easy control of ARGB LED's.
-- b_Setup.ino for the configuration of the arduino nad the void setup() function
-- c_loop.ino for readiing the input values form swtiches potentiometer, and for controlling the LED strips.
+The Arduino code I prepared for this project was divided into three files:
+- NEON_arduino_two_strip.ino for defining the libraries and used variables. I used the FastLED.h library for easy control of ARGB LEDs.
+- b_Setup.ino for the configuration of the Arduino and the void setup() function
+- c_loop.ino for reading the input values from switches, potentiometers, and for controlling the LED strips.
 
 ## PCB Design
 
-I've used the already known to me software CircuitMaker (free software from Altium) to designe my own PCB. I precisely adjusted the component placement and traces to enable single-sided PCB printing. I also considered the trace width for high-current loops.
+I used the already known to me software CircuitMaker (free software from Altium) to design my own PCB. I precisely adjusted the component placement and traces to enable single-sided PCB printing. I also considered the trace width for high-current loops.
 
 ### PCB designed in CircuitMaker:
 
@@ -57,10 +56,10 @@ I've used the already known to me software CircuitMaker (free software from Alti
 
 ## PCB Manufacturing
 
-I've used the JLCPCB website to manufacture my PCB board. I mounted the PCB with soldered components in a 3D-printed enclosure. The PCB and the finished board has been presented below.
+I used the JLCPCB website to manufacture my PCB board. I mounted the PCB with soldered components in a 3D-printed enclosure. The PCB and the finished board are presented below.
 
 ### Manufactured PCB:
 
-<img src="https://github.com/majkel808/PCB_design/assets/163661382/37406789-c45f-4b5b-8482-901df796d971" alt="20240420_231753" width="550"/>
+<img src="https://github.com/majkel808/PCB_designe/assets/163661382/37406789-c45f-4b5b-8482-901df796d971" alt="20240420_231753" width="550"/>
 
-<img src="https://github.com/majkel808/PCB_design/assets/163661382/8a25ff05-60cd-4cf7-9431-78db365e0369" alt="20231002_204947" width="550"/>
+<img src="https://github.com/majkel808/PCB_designe/assets/163661382/8a25ff05-60cd-4cf7-9431-78db365e0369" alt="20231002_204947" width="550"/>
