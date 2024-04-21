@@ -57,4 +57,10 @@ I've used the already known to me software CircuitMaker (free software from Alti
 
 ## PCB Manufacturing
 
-I've used the JLCPCB website to manufature my PCB
+I've used the JLCPCB website to manufacture my PCB board. I mounted the PCB with soldered components in a 3D-printed enclosure. The PCB and the finished board has been presented below.
+
+### Manufactured PCB:
+
+<img src="https://github.com/majkel808/PCB_design/assets/163661382/37406789-c45f-4b5b-8482-901df796d971" alt="20240420_231753" width="550"/>
+
+<img src="https://github.com/majkel808/PCB_design/assets/163661382/8a25ff05-60cd-4cf7-9431-78db365e0369" alt="20231002_204947" width="550"/>
